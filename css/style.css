@@ -102,6 +102,8 @@ img {
 .col {
   padding-right: 1em;
   padding-left: 1em;
+  width: 33.33333%;
+  float: left;
 }
 
 .main-footer {
