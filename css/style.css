@@ -149,3 +149,12 @@ img {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .primary,
+  .secondary,
+  .tertiary {
+    width: 100%;
+  }
+
+}
