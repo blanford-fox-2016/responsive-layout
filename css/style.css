@@ -45,10 +45,13 @@ img {
 .name {
   font-size: 1.25em;
   margin: 0;
+  float: left;
 }
 
 .main-nav {
   margin-top: 5px;
+  float: right;
+  display: flex;
 }
 
 .name a,
@@ -90,6 +93,8 @@ img {
 .col {
   padding-right: 1em;
   padding-left: 1em;
+  width: 33.33%;
+  float: left;
 }
 
 .main-footer {
@@ -116,30 +121,39 @@ img {
   clear: both;
 }
 
-.secondary-col {
-  float: left;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.primary-col {
-  float: left;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.tertiary-col {
-  float: left;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.main-nav a {
-  float: left;
-}
-
-
 /* =================================
   Media Queries
 ==================================== */
+@media screen and (max-width: 1024px) {
+  .main-nav {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    width: 100%;
+    text-align: center
+  }
+  .main-nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .secondary,
+  .primary {
+    width: 50%;
+  }
+  .tertiary {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .primary,
+  .secondary,
+  .tertiary {
+    width: 100%;
+  }
+
+}
