@@ -897,11 +897,14 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
+  .top-nav ul li.right,
   .top-nav ul li {
     float: none;
   }
 }
+
+
 .jumbotron-blue {
   padding-top: 30px;
   padding-bottom: 30px;
