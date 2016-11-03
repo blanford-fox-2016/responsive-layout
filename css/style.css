@@ -1,4 +1,4 @@
-/* ================================= 
+/* =================================
   Base Element Styles
 ==================================== */
 
@@ -35,8 +35,15 @@ a {
 img {
   max-width: 100%;
 }
+.container {
+  width: 90%;
+  margin: auto;
+}
+.clearfix {
+  clear: both;
+}
 
-/* ================================= 
+/* =================================
   Base Layout Styles
 ==================================== */
 
@@ -45,15 +52,20 @@ img {
 .name {
   font-size: 1.25em;
   margin: 0;
+  width: 50%;
+  float: left
 }
 
 .main-nav {
   margin-top: 5px;
+  width: 50%;
+  float: right;
+  display: inline-flex;
+  text-align: right;
 }
 
 .name a,
 .main-nav a {
-  text-align: center;
   display: block;
   padding: 10px 15px;
 }
@@ -108,7 +120,6 @@ img {
   margin-bottom: 0;
 }
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
-
