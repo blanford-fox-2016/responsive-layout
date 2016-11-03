@@ -141,4 +141,11 @@ img {
     text-align: center;
     display: block;
   }
+  .secondary,
+  .primary {
+    width: 50%;
+  }
+  .tertiary {
+    width: 100%;
+  }
 }
