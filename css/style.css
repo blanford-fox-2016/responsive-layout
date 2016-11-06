@@ -1,4 +1,10 @@
-/* ================================= 
+/* =================================
+  custome Queries
+==================================== */
+
+
+
+/* =================================
   Base Element Styles
 ==================================== */
 
@@ -36,7 +42,7 @@ img {
   max-width: 100%;
 }
 
-/* ================================= 
+/* =================================
   Base Layout Styles
 ==================================== */
 
@@ -49,12 +55,13 @@ img {
 
 .main-nav {
   margin-top: 5px;
+  float: right;
 }
 
 .name a,
 .main-nav a {
   text-align: center;
-  display: block;
+  display: inline;
   padding: 10px 15px;
 }
 
@@ -66,6 +73,10 @@ img {
 
 .main-nav a:hover {
   color: #0A5856;
+}
+
+.main-nav li{
+  float: left;
 }
 
 /* ---- Layout Containers ---- */
@@ -108,7 +119,70 @@ img {
   margin-bottom: 0;
 }
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
+.grid-container {
+  width: 100%;
+}
+.grid-container* {
+  box-sizing: border-box;
+}
+.row:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row:after {
+  content: "";
+  display: table ;
+  clear: both;
+}
+.col-1 {
+  width: 16.66666667%;
+}
+.col-2 {
+  width: 33.33%;
+}
+.col-3 {
+  width: 50%;
+}
+.col-4 {
+  width: 66.66666667%;
+}
+.col-5 {
+  width: 83.3333333%;
+}
+.col-6 {
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
+  float: left;
+}
+
+@media all and (max-width: 800px) {
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
+
+.text-center{
+  text-align: center;
+}
